@@ -2,7 +2,7 @@
 
 Se trata de desarrollar un programa mediante el paradigma de la POO que muestre un menú con 3 opciones y realice las acciones que se detallan a continuación.
 
-### 1. Menú de la aplicación.
+## 1. Menú de la aplicación.
 
 La aplicación debe mostrar un menú con las siguientes opciones:
 
@@ -23,13 +23,13 @@ interface IMenu {
 }
 ```
    
-### 2. Info de E/S enuna clase.
+## 2. Info de E/S enuna clase.
    
 La información que mostramos y recibimos de la consola se debe manejar con una clase específica para ello. Esta clase debe inyectarse correctamente a las clases que la necesiten para cumplir el principio SOLID DIP. 
 
 ***No será válido la creación de un Object o un Companion object para realizar esta labor***.
      
-### 3. Generar serie.
+## 3. Generar serie.
        
 La opción 1 del menú, ```Generar Serie```, debe crear un rango aleatorio entre 1 y 100 y después solicitar un valor que debe estar dentro de dicho rango. El rango debe tener, al menos, 30 números entre el valor mínimo y el máximo. 
 Una vez creado internamente un rango que cumpla dichos requisitos, mostrará un mensaje como el que sigue:
@@ -41,6 +41,8 @@ Inserte un número [23-77] ->
 En este ejemplo se ha generado aleatoriamente el rango 23-77, que está dentro de 1-100 y entre los valores mínimo y máximo existen, al menos, 30 números (77 - 23 = 54)
 
 Dependiendo del número introducido, si está más cercano al mínimo o al máximo del rango deberá mostrar un tipo de serie u otra.
+
+### 2.1. Serie Creciente.
       
 Si el número introducido está más cerca del máximo, por ejemplo si introducimos el valor 53, debe mostrar lo siguiente:
       
@@ -59,6 +61,10 @@ Inserte un número [23-77] -> 53
 53+54+55+...+77 (24)
 Suma => 1625
 ```
+
+La suma final de la serie corresponde con la suma de todos los números desde el número introducido al máximo del rango.
+
+### 2.2. Serie Decreciente.
 
 Si por el contrario se introdujo el número más cercano al valor inferior, por ejemplo el 30:
 
@@ -92,7 +98,7 @@ Para ello, debes crear la clase ```GeneradorSeries```, que será un patrón sing
 	  
 	 - ***IMPORTANTE***: Los parámetros de entrara y retorno de cada método lo debes definir tú.
    
-### 4. Jugar al ahorcado.
+## 4. Jugar al ahorcado.
    
 * Esta opción muestra el típico juego del ahorcado. Para ello debes desarrollar una clase ```Ahorcado```, en cuyo constructor primario tendrá la propiedad que define los intentos máximos *(por defecto 5)*. 
    
@@ -126,11 +132,11 @@ Para ello, debes crear la clase ```GeneradorSeries```, que será un patrón sing
    
 * IMPORTANTE: la función ```jugarAhorcado()``` de la clase ```GestorMenu``` realizará una llamada al método ```jugar()``` de la clase ```Ahorcado``` directamente haciendo una llamada a una instancia de dicha clase, pero sin crear ninguna variable. 
    
-### 5. Salir:
+## 5. Salir:
    
 Mostrará el mensaje "Saliendo..." y se acabará el programa.
 
-### 6. Aspectos a tener en cuenta.
+## 6. Aspectos a tener en cuenta.
 
 * Realizar la inyección de dependencias de todas las clases cumpliendo el principio SOLID DIP.
    
