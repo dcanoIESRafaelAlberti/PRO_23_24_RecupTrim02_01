@@ -130,7 +130,17 @@ Para ello, debes crear la clase ```GeneradorSeries```, que será un patrón sing
    
 * También debes decidir qué modificador de visibilidad debe llevar cada uno.
    
-* IMPORTANTE: la función ```jugarAhorcado()``` de la clase ```GestorMenu``` realizará una llamada al método ```jugar()``` de la clase ```Ahorcado``` directamente haciendo una llamada a una instancia de dicha clase, pero sin crear ninguna variable. 
+* IMPORTANTE: la función ```jugarAhorcado()``` de la clase ```GestorMenu``` realizará una llamada al método ```jugar()``` de la clase ```Ahorcado``` directamente haciendo una llamada a una instancia de dicha clase, pero sin crear ninguna variable.
+
+* El juego debe desarrollarse y mostrar los mensajes de la siguiente manera...
+
+   - Juego cuando aciertas la palabra oculta dentro del máximo de intentos permitidos *(pierdes un intento solo cuando la palabra oculta no contiene la letra introducida)*:
+
+   ![Juego del ahorcado acertando una palabra](juegoAhorcadoGana.jpg)
+
+  - Juego cuando no eres capaz de acertar la palabra oculta en los intentos máximos permitidos *(si la palabra no contiene una letra introducida debe mostrar los intentos que te restan)*:
+
+   ![Juego del ahorcado perdiendo y no adivinando una palabra](juegoAhorcadoPierde.jpg)
    
 ## 5. Salir:
    
