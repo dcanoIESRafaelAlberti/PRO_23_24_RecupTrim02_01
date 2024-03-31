@@ -140,7 +140,7 @@ Para ello, debes crear la clase ```GeneradorSeries```, que será un patrón sing
 
   - Juego cuando no eres capaz de acertar la palabra oculta en los intentos máximos permitidos *(si la palabra no contiene una letra introducida debe mostrar los intentos que te restan)*:
 
-   ![Juego del ahorcado perdiendo y no adivinando una palabra](juegoAhorcadoPierde.jpg)
+   ![Juego del ahorcado perdiendo y no adivinando una palabra](juegoAhorcadoPerdiendo.jpg)
    
 ## 5. Salir:
    
