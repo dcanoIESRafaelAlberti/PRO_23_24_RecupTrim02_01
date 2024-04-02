@@ -23,7 +23,7 @@ interface IMenu {
 }
 ```
    
-## 2. Info de E/S enuna clase.
+## 2. Info de E/S en una clase.
    
 La información que mostramos y recibimos de la consola se debe manejar con una clase específica para ello. Esta clase debe inyectarse correctamente a las clases que la necesiten para cumplir el principio SOLID DIP. 
 
