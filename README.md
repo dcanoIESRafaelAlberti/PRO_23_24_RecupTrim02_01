@@ -62,7 +62,7 @@ Inserte un número [23-77] -> 53
 Suma => 1625
 ```
 
-La suma final de la serie corresponde con la suma de todos los números desde el número introducido al máximo del rango.
+La `Suma` final de la serie corresponde con la suma de todos los números desde el número introducido al máximo del rango.
 
 ### 2.2. Serie Decreciente.
 
@@ -83,8 +83,10 @@ Inserte un número [23-77] -> 30
 08 -> 30 = 30
 Total => 996
 ```
-   
-Para ello, debes crear la clase ```GeneradorSeries```, que será un patrón singleton, es decir, solo debe existir una instancia del objeto e implementará como mínimo los siguientes 4 métodos:
+
+El `Total` será la suma de los totales de cada fila, es decir, `996 = 212+189+165+140+114+87+59+30`.
+
+Para desarrollar estas series, debes crear la clase ```GeneradorSeries```, que será un patrón singleton, es decir, solo debe existir una instancia del objeto e implementará como mínimo los siguientes 4 métodos:
    
    - ```generarRangoAleatorio()```: retorna los valores minimos y máximos de nuestro rango. Debe cumplir que el rango generado tenga al menos 30 números y esté dentro de los valores de referencia 1-100.
 	  
